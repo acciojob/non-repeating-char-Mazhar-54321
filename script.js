@@ -1,8 +1,8 @@
-function firstNonRepeatedChar(str) {
+function firstNonRepeatedChar(s) {
  let map={};
  for(let i=0;i<s.length;i++){
 	map[s[i]]=(map[s[i]]??0)+1
- }
+ } 
  let ans = null;
  let keys = Object.keys(map);
  for(let i=0;i<keys.length;i++){
@@ -11,7 +11,7 @@ function firstNonRepeatedChar(str) {
 		break;
 	}
  }
- return ans;
+ return ans; 
 }
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
